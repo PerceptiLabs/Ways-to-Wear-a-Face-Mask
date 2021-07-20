@@ -39,14 +39,14 @@ The following shows a partial example of the data stored in **mask_log.csv** tha
 
 The values in the **target** column indicate the respective mask-wearing state depicted in each image:
 
-0: mask above chin
-1: mask worn correctly
-2: mask hanging from wearer's ear
-3: mask not worn
-4: mask on forehead
-5: mask on tip of nose
-6: mask under chin
-7: mask under nose
+0 - mask above chin
+1 - mask worn correctly
+2 - mask hanging from wearer's ear
+3 - mask not worn
+4 - mask on forehead
+5 - mask on tip of nose
+6 - mask under chin
+7 - mask under nose
 
 # Community
 
