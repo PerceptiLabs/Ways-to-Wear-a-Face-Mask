@@ -6,9 +6,18 @@
 
 # Ways-to-Wear-a-Face-Mask
 
-This dataset<sup>1</sup> contains images of people wearing face masks.
+This repo contains a CSV file that maps images from the [Ways to Wear a Mask or a Respirator (WWMR-DB)](https://ieee-dataport.org/open-access/ways-wear-mask-or-respirator-wwmr-db) dataset <sup>1</sup> to the following numeric labels:
 
-The data can be used to build and train an ML model that can detect the presence and correct positioning of face masks (e.g., for protecting against COVID-19).
+0 - mask above chin<br/>
+1 - mask worn correctly<br/>
+2 - mask hanging from wearer's ear<br/>
+3 - mask not worn<br/>
+4 - mask on forehead<br/>
+5 - mask on tip of nose<br/>
+6 - mask under chin<br/>
+7 - mask under nose
+
+This can be used to build and train an ML model in PerceptiLabs that can detect the presence and correct positioning of face masks (e.g., for protecting against COVID-19).
 
 # Structure
 
@@ -16,15 +25,7 @@ This repo contains the following structure:
 
 - **mask_log.csv**: CSV file for use in loading the data into PerceptiLabs.
 
-Due to the large number of images, the dataset must be downloaded from [https://ieee-dataport.org/open-access/ways-wear-mask-or-respirator-wwmr-db](https://ieee-dataport.org/open-access/ways-wear-mask-or-respirator-wwmr-db).
-
-The following shows an example of images from the dataset:
-
-<p align="center">
-  <img src="./mask_sample.png">
-</p>
-
-The following shows a partial example of the data stored in **mask_log.csv** that is used to load the data into PerceptiLabs: 
+The following shows a partial example of the data stored in **mask_log.csv** that is used to load the data into PerceptiLabs. The values in the **target** column indicate the respective mask-wearing state depicted in each image.
 
 | **image_path** | **target** |
 |------------|--------------|
@@ -37,16 +38,13 @@ The following shows a partial example of the data stored in **mask_log.csv** tha
 | Mask_Under_Chin/0001_MRNC_DRNV_0000.jpg | 6 |
 | Mask__Under_Nose/0001_MRNN_DRNV_0 | 7 |
 
-The values in the **target** column indicate the respective mask-wearing state depicted in each image:
+Due to the large number of images in the dataset, the dataset itself must be downloaded from [https://ieee-dataport.org/open-access/ways-wear-mask-or-respirator-wwmr-db](https://ieee-dataport.org/open-access/ways-wear-mask-or-respirator-wwmr-db).
 
-0 - mask above chin<br/>
-1 - mask worn correctly<br/>
-2 - mask hanging from wearer's ear<br/>
-3 - mask not worn<br/>
-4 - mask on forehead<br/>
-5 - mask on tip of nose<br/>
-6 - mask under chin<br/>
-7 - mask under nose
+The following shows an example of images from the dataset:
+
+<p align="center">
+  <img src="./mask_sample.png">
+</p>
 
 # Community
 
